@@ -1,4 +1,4 @@
-describe('Restful Booker Messages', ()=>{
+describe('Restful Booker Messages', () => {
     it('Front page should be displayed correctly', async () => {
         await browser.url(`https://automationintesting.online/`)
         await browser.$('//*[text()="Let me hack!"]').click()
@@ -49,6 +49,147 @@ describe('Restful Booker Messages', ()=>{
         await browser.$('//*[@id="message1"]/div[3]/span').click()
         await expect(browser.$('//*[@id="message1"]')).not.toBeExisting()
     })
+
+    it('Should be able to add lots of messages', async () => {
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message1
+        await send("TestName1", "testemail1@email.com", "011111111111111", "TestSubject1", "This is a new test message 1", 'h2=Thanks for getting in touch TestName1!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message2
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message3
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message4
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message5
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message6
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message7
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message8
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message9
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message10
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message11
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message12
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message13
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message14
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message15
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message16
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message17
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message18
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message19
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message20
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message21
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message22
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message23
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message24
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message25
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message26
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message27
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message28
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message29
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+        await browser.url(`https://automationintesting.online/`)
+
+        //add message30
+        await send("TestName2", "testemail2@email.com", "011111111111111", "TestSubject2", "This is a new test message 2", 'h2=Thanks for getting in touch TestName2!');
+
+        //go to admin and check messages
+        await browser.url(`https://automationintesting.online/#/admin`)
+        await expect(browser.$('//*[@id="root"]/div/nav/div[3]/ul/li[1]/a')).toBeExisting();
+        await browser.$('//*[@id="root"]/div/nav/div[3]/ul/li[1]/a').click();
+        await expect(browser.$('//*[@id="message30"]')).toBeExisting();
+
+        async function send(name, email, phone, subject, description, message) {
+            await browser.$('//*[@id="name"]').setValue(name);
+            await browser.$('//*[@id="email"]').setValue(email);
+            await browser.$('//*[@id="phone"]').setValue(phone);
+            await browser.$('//*[@id="subject"]').setValue(subject);
+            await browser.$('//*[@id="description"]').setValue(description);
+            await browser.$('button[id="submitContact"]').click();
+
+            await expect(browser.$(message)).toBeExisting();
+        }
+    })
+
 })
 
 
